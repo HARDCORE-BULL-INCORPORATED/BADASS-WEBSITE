@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-// import HCMUSCLEBULL from "../../public/HCMUSCLEBULL.png";
+import HCMUSCLEBULL from "../../public/HCMUSCLEBULL.png";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -27,13 +27,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				// style={{
-				//     backgroundImage: `url(${HCMUSCLEBULL.src})`,
-				//     width: "100%",
-				//     height: "100%",
-				//     backgroundSize: "cover",
-				//     backgroundRepeat: "no-repeat",
-				// }}
+				style={{
+					// backgroundImage: `url(${HCMUSCLEBULL.src})`,
+					width: "100%",
+					height: "100%",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+				}}
 				className={`${geistSans.variable} ${geistMono.variable} antialiased bgi`}
 			>
 				{children}
